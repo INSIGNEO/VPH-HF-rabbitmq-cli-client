@@ -1,0 +1,9 @@
+#!/bin/bash
+BASE_DIR=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
+export PATH=$PATH:$BASE_DIR/amqptools/bin
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$BASE_DIR/rabbitmq-c/build/librabbitmq
+export AMQP_HOST=${amqp_host}
+export AMQP_PORT=${amqp_port}
+export AMQP_VHOST=${amqp_vhost}
+export AMQP_USER=${amqp_user}
+export AMQP_PASSWORD=${amqp_password}
