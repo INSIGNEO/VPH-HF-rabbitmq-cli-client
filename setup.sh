@@ -44,6 +44,8 @@ sed -e "s/\${amqp_host}/`echo ${AMQP_HOST}`/" -e "s/\${amqp_vhost}/`echo ${AMQP_
 
 #build rabbitmq-c
 cd rabbitmq-c
+git submodule init
+git submodule update
 mkdir -p build
 cd build
 cmake ..
